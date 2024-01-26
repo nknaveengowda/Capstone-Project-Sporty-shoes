@@ -1,0 +1,231 @@
+{
+	"id": "627c6222-4c02-4bd1-9630-faa210314612",
+	"name": "SportyShoes",
+	"timestamp": "2024-01-26T03:17:08.928Z",
+	"collection_id": "32336112-cdb4813b-7191-4c3d-9eec-11e7f414876a",
+	"folder_id": 0,
+	"environment_id": "32336112-17b5859c-84b8-4f1d-ae71-3df05ea1851f",
+	"totalPass": 22,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-26T03:17:07.512Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d7af2813-320c-4d1b-ac5d-e26eac886e71",
+			"name": "List_of_Shoes",
+			"url": "http://localhost:9010/get-shoes",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate the 'code' field is equal to 0": true,
+				"Validate the message field is a non-empty string": true,
+				"Verify 'shoes' array is present and contains at least one element": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Validate the 'code' field is equal to 0": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Validate the message field is a non-empty string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Verify 'shoes' array is present and contains at least one element": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				10,
+				13
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate the 'code' field is equal to 0": true,
+					"Validate the message field is a non-empty string": true,
+					"Verify 'shoes' array is present and contains at least one element": true
+				},
+				{
+					"Response status code is 200": true,
+					"Validate the 'code' field is equal to 0": true,
+					"Validate the message field is a non-empty string": true,
+					"Verify 'shoes' array is present and contains at least one element": true
+				}
+			]
+		},
+		{
+			"id": "4fa29124-fc65-4281-96f2-a3fa566f7aa0",
+			"name": "Registered_Users",
+			"url": "http://localhost:9010/get-users",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - code, message, and users": true,
+				"Name is a non-empty string": true,
+				"Email is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Response has the required fields - code, message, and users": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				7,
+				9
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - code, message, and users": true,
+					"Name is a non-empty string": true,
+					"Email is in a valid format": true
+				},
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - code, message, and users": true,
+					"Name is a non-empty string": true,
+					"Email is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "b8286475-8002-44a5-aaee-1b025c378bb4",
+			"name": "Add_Product",
+			"url": "http://localhost:9010/add-shoe?id=101&image=image_url&name=SampleShoe&category=Running&sizes=9&price=1000",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate the 'code' field in the response": true,
+				"Validate the 'message' field in the response": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Validate the 'code' field in the response": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Validate the 'message' field in the response": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				7,
+				8
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate the 'code' field in the response": true,
+					"Validate the 'message' field in the response": true
+				},
+				{
+					"Response status code is 200": true,
+					"Validate the 'code' field in the response": true,
+					"Validate the 'message' field in the response": true
+				}
+			]
+		},
+		{
+			"id": "5718f431-494a-4e64-b9e4-b0618b3a8536",
+			"name": "New Request",
+			"url": "http://localhost:9010/delete-shoe?id=101",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7,
+				8
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "443872ce-8099-42ab-9ea2-807ca44a6478",
+			"name": "New Request",
+			"url": "http://localhost:9010/update-shoe",
+			"time": 11,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13,
+				11
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 93,
+	"collection": {
+		"requests": [
+			{
+				"id": "d7af2813-320c-4d1b-ac5d-e26eac886e71",
+				"method": "GET"
+			},
+			{
+				"id": "4fa29124-fc65-4281-96f2-a3fa566f7aa0",
+				"method": "GET"
+			},
+			{
+				"id": "b8286475-8002-44a5-aaee-1b025c378bb4",
+				"method": "POST"
+			},
+			{
+				"id": "5718f431-494a-4e64-b9e4-b0618b3a8536",
+				"method": "DELETE"
+			},
+			{
+				"id": "443872ce-8099-42ab-9ea2-807ca44a6478",
+				"method": "PUT"
+			}
+		]
+	}
+}
