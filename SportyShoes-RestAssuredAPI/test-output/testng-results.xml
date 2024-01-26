@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-26T15:14:55 IST" name="Default suite" finished-at="2024-01-26T15:14:57 IST" duration-ms="1486">
+    <groups>
+    </groups>
+    <test started-at="2024-01-26T15:14:55 IST" name="Default test" finished-at="2024-01-26T15:14:57 IST" duration-ms="1486">
+      <class name="com.sportyshoe.restAssuredScripts.Deleteshoe">
+        <test-method signature="delete_product()[pri:49, instance:com.sportyshoe.restAssuredScripts.Deleteshoe@436813f3]" started-at="2024-01-26T15:14:55 IST" name="delete_product" finished-at="2024-01-26T15:14:57 IST" duration-ms="1447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_product -->
+      </class> <!-- com.sportyshoe.restAssuredScripts.Deleteshoe -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
